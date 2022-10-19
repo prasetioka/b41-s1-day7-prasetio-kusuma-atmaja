@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Detail Page</title>
+    <link rel="shortcut icon" href="../public/img/page-icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/css/project-page.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid mx-0 px-0 gap-3">
+            <a class="navbar-brand" href="https://dumbways.id/" target="_blank">
+                <img src="../public/img/logo-dumbways.png" width="60px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav gap-3">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    <a class="nav-link" href="/formProject">Add Project</a>
+                </div>
+            </div>
+            <div class="nav-button d-flex justify-content-end">
+                <button type="button" class="btn btn-dark">
+                    <a href="/contact" class="text-decoration-none text-white">Contact Me</a>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    {{.Id}}
+    <div class="container-content d-flex flex-column">
+        <h1 class="fw-bold fs-3 text-center mb-5">
+            {{.Title}}
+        </h1>
+        <div class="section-1 d-flex flex-row gap-4">
+            <div>
+                <img src="../public/img/code.jpg" class="rounded-4"/>
+            </div>
+            <div class="project-details d-flex flex-column fs-6">
+                <div class="duration d-flex flex-column">
+                    <p class="text-dur fw-bold mb-2 mt-5">Duration</p>
+                    <div class="date d-flex flex-row gap-2">
+                        <i class="fa-solid fa-calendar-days fs-4"></i>
+                        <p class="text-muted">Date Started - Date Finished</p>
+                    </div>
+                    <div class="time d-flex flex-row gap-2">
+                        <i class="fa-regular fa-clock fs-3"></i>
+                        <p class="text-muted">Project Duration</p>
+                    </div>
+                </div>
+                <p class="tech-title mb-2 fw-bold">Technologies</p>
+                <div class="project-tech d-flex flex-row">
+                    <div class="icon-tech d-flex flex-column gap-3 me-2">
+                        <i class="fa-brands fa-react fs-3"></i>
+                        <i class="fa-brands fa-node-js fs-3"></i>
+                    </div>
+                    <div class="tech-text d-flex flex-column gap-2 me-5">
+                        <p class="text-muted">React Js</p>
+                        <p class="text-muted">Node Js</p>
+                    </div>
+                    <div class="icon-tech d-flex flex-column gap-3 me-2">
+                        <i class="fa-brands fa-square-js fs-3"></i>
+                        <i class="fa-solid fa-bolt fs-3"></i>
+                    </div>
+                    <div class="tech-text d-flex flex-column gap-2">
+                        <p class="text-muted">JavaScript</p>
+                        <p class="text-muted">Socket IO</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-2 mt-5">
+            <p>
+                {{.Content}}
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum iusto alias harum et quod assumenda repellat, eaque asperiores sapiente accusantium doloribus provident maiores repudiandae illo! Laudantium neque veniam veritatis voluptas vitae ullam aliquam laboriosam nisi sequi eaque consequatur ipsum, voluptatibus sunt amet tempore voluptatum nihil atque! Accusantium placeat ipsa distinctio.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa enim a facere, inventore sequi nisi voluptas exercitationem provident? Similique alias facilis rerum recusandae ab mollitia quo, accusantium nam assumenda iusto sed officiis, vero neque adipisci maiores totam molestias nulla optio molestiae at hic enim? Dolor nulla sequi sit officiis pariatur nostrum unde rerum error quae, libero repudiandae repellendus, non fugit nihil corrupti, expedita eveniet! Eos necessitatibus dignissimos ab aliquid nemo incidunt doloribus quibusdam voluptatem exercitationem aperiam eius sapiente accusamus, fugit nihil sit placeat architecto voluptatibus! Earum, distinctio. Alias quos reiciendis officiis molestias, possimus dolor. Sunt, error est natus quia nam fuga ut ipsa asperiores illum nemo explicabo saepe cum eius veritatis reprehenderit nihil veniam repellendus, reiciendis tempore vitae quae! Consectetur aperiam molestias impedit deserunt? Fugit dolor earum possimus in quam saepe vero dicta unde. Velit, magnam, ducimus porro eaque officia adipisci delectus deleniti nisi nam ad rerum quisquam sequi eos facere! Voluptatem explicabo impedit officiis officia temporibus saepe illum quisquam, atque sapiente non possimus dolore, nam placeat exercitationem. Fugiat nisi recusandae in, sequi dignissimos ab inventore dolorum, quod sint quibusdam unde sapiente, accusantium porro commodi ut? Cum obcaecati ullam tempora cumque, harum ipsa animi quae corporis esse, soluta quisquam minima.
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id veritatis ad mollitia alias praesentium. Animi consectetur ex dolor ullam magnam odit ut aut excepturi illo optio? Animi iste deserunt earum optio ratione. Labore, ad quam, perspiciatis commodi aut accusantium blanditiis quod non eum eveniet sed adipisci magnam ipsa dignissimos pariatur qui suscipit iure quo natus vero inventore. At aspernatur maiores quae eligendi consectetur molestiae laudantium vitae eius? Magni laudantium maiores doloribus, labore molestias pariatur voluptatibus voluptatem, earum magnam, tempore excepturi?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex incidunt ipsam nostrum consequatur odio debitis non tenetur et delectus quo molestiae dolores sequi, dolorum enim. Voluptate consequatur modi, expedita rerum aut repudiandae nihil possimus itaque commodi distinctio sequi debitis?
+            </p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+</html>
